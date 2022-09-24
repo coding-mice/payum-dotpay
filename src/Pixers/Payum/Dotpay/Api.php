@@ -31,10 +31,8 @@ class Api
      */
     protected $options = [
         'id' => null,
-        'URLC' => null,
         'url' => null,
         'endpoint' => self::DEFAULT_ENDPOINT,
-        'method' => 'GET',
         'type' => Constants::TYPE_ONLY_RETURN_BUTTON,
         'PIN' => null,
         'ip' => null
