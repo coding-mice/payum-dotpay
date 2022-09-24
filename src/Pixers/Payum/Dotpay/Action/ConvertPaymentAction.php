@@ -42,10 +42,6 @@ class ConvertPaymentAction implements ActionInterface
             $details[$key] = $detail;
         }
 
-        $details->defaults([
-            Constants::FIELD_STATUS => Constants::STATUS_CAPTURED,
-        ]);
-
         $request->setResult((array) $details);
     }
 
