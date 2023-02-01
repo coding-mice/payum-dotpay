@@ -39,7 +39,8 @@ class DotpayGatewayFactory extends GatewayFactory
         if (false == $config['payum.api']) {
             $config['payum.default_options'] = [
                 'id' => '',
-                'URLC' => '',
+                /* disabled, not supported anymore */
+                //'URLC' => '',
                 'endpoint' => Api::DEFAULT_ENDPOINT,
                 'method' => 'GET',
             ];
@@ -51,7 +52,8 @@ class DotpayGatewayFactory extends GatewayFactory
 
                 $dotpayConfig = [
                     'id' => $config['id'],
-                    'URLC' => $config['URLC'],
+                    /* disabled, not supported anymore */
+                    //'URLC' => $config['URLC'],
                     'endpoint' => $config['endpoint'],
                     'method' => $config['method'],
                     'url' => $config['url'],
